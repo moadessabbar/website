@@ -1,0 +1,165 @@
+% resume-a4.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@sudo.ws> http://www.sudo.ws/todd
+% (c) 2019 Moad Essabbar <moaad.essabbar@gmail.com> 
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[a4paper, 10pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{graphicx}
+\usepackage{color}
+\definecolor{col}{rgb}{0.3,0.3,0.3}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0mm}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-15mm}
+\addtolength{\textwidth}{25mm}
+\addtolength{\topmargin}{-11mm}
+\addtolength{\textheight}{25mm}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+
+\newcommand{\resheading}[1]{{\large\colorbox{col}{\begin{minipage}{\textwidth\enskip}{\textcolor{white}{\textbf{#1 \vphantom{p\^{E}}}}}\end{minipage}}}\nolinebreak}
+
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{175mm}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-5pt}}
+
+\newcommand{\ressubheadingbis}[3]{
+\begin{tabular*}{175mm}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} \textit{#2} & \textit{#3} \\
+\end{tabular*}\vspace{-4pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+%Header
+{
+\def\arraystretch{1.2}
+\begin{tabular*}{164mm}{l@{\extracolsep{\fill}}r}
+\textbf{\large Moad Essabbar} & Driving license B - 34090 Montpellier\\
+Ph.D. candidate in electronics, components and systems & +33 7 55 44 83 81\\
+Embedded systems and industrial IT engineer & moad.essabbar@gmail.com\\
+\end{tabular*}
+}
+\vspace{2mm}
+
+\resheading{Experience} \smash{\put(-70,-7){\includegraphics[width=2.5cm]{images/moad7.png}}}
+\begin{itemize}
+\item
+	\ressubheading{Ph.D. candidate in electronics, components and systems}{Montpellier}{Instistut d'Electronique et des Systèmes}{Oct 2017 - Nov 2020 (expected)}
+	\begin{itemize}
+		\resitem{Nonlinear acoustic microscopy: developed a new method of Nondestructive Testing (NDT) and ultrasonic imagery, using nonlinear effects of acoustic waves propagation.}
+		\resitem{Built and programmed a fully automated scanning system designed for acquisition, display, storage and computation of data associated with measurement and mapping of acoustic fields using LabVIEW.}
+		\resitem{Written ultrasonic field simulation programs in Python/Matlab}
+	\end{itemize}
+
+	\ressubheading{R and Shiny developer}{Montpellier}{University of Montpellier, Service of scientific culture}{Sep 2018 - Aug 2019}
+	\begin{itemize}
+		\resitem{Developed and integrated (in collaboration) a scientific software in R, that performed statistical analysis on stuffed animals regarding their morphology and emotional effects on their owners.}
+		\resitem{More than 850 contributions from around the world composed the database of the analysis.}
+	\end{itemize}
+	
+	\ressubheading{LabVIEW and signal processing lecturer (MCE)}{Montpellier}{University of Montpellier, EEA department}{Sep 2018 - Aug 2019}
+	\begin{itemize}
+		\resitem{Teached signal processing and  programming/interfacing HW using LabVIEW.}
+	\end{itemize}
+
+\item
+	\ressubheading{Matlab developer/ Ultrasonic microscopy - Internship}
+	{Montpellier}{Institut d'Electronique et des Systèmes}{Apr 2017 - Aug 2017}
+	\begin{itemize}
+		\resitem{Developed a simulation software using Matlab and confirmed the results on a scanning acoustic microscope.}
+	\end{itemize}
+
+\item
+	\ressubheading{Industrial IT - Internship}{Taroudant, Morocco}{AUTEC - Automation Technology}{June 2016 - Aug 2016}
+	\begin{itemize}
+		\resitem{Built (in collaboration) a supervising and archiving system (HW/SW), for data coming from SIEMENS PLCs of the agro-food factory COPAG, using: Python - Windev - RaspberryPI - SQL - PHP - TIA Portal.}
+	\end{itemize}
+	
+\item
+	\ressubheading{3D modeled (in collaboration) an automatic CNC tool changer - Internship}{Tanger, Morocco}{CIS MED}{June 2015 - Aug 2015}
+	
+\end{itemize}
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{Engineering degree in Embedded systems and industrial IT}
+	{Fez, Morocco}{National School of Applied Sciences}{2012 - 2017}
+
+\end{itemize}
+
+\resheading{Honors and awards}
+\begin{itemize}
+\item\ressubheadingbis{1st Place: ProtoTop competition}
+	{Cité d'innovation, USMBA}{Mai 2016}
+\item\ressubheadingbis{1st Place: Google Startup Weekend competition}
+	{Google for Entrepreneurs}{Feb 2016}
+\item\ressubheadingbis{Scholarship for excellence}
+	{MT2E Association}{2012 - 2017}
+\end{itemize}
+
+\resheading{Technical skills and languages}
+\begin{itemize}
+\item\textbf{French:} Proficient  -
+\textbf{English:} Proficient  -
+\textbf{German:} Intermediate  -
+\textbf{Chinese:} Basic  -
+\textbf{Arabic :} Native
+\vspace{-4pt}
+\item\textbf{Programming:}
+C/C{}\verb!++!, ASM, Python, Matlab, LabVIEW, Windev, VHDL, Java, HTML, CSS, JS.
+\vspace{-4pt}
+\item\textbf{Hardware:}
+Embedded systems, Sensors implementation, Signal Acquisition, Fast Prototyping, 3D printing.
+\vspace{-4pt}
+\item\textbf{Protocols and OSs:}
+CAN, UART, I\textsuperscript{2}C, SPI, TCP/IP, (T)FTP, SSH, Linux, MacOS, Windows.
+\vspace{-4pt}
+\item\textbf{Version control:}
+Git. \quad  
+{\small\textbullet} \textbf{Typesetting: }
+LaTeX.
+\vspace{-4pt}
+\item\textbf{3D modeling and printing :}
+CATIA and Fusion 360. 3D printers setup and modding.
+\end{itemize}
+
+\resheading{Personal projets}
+\begin{itemize}
+
+\item\textbf{Machine learning :}
+Implemented a genetic algorithm on Processing (Java based) that converges to a given solution from an initial random population by evolving over generations.
+\vspace{-5pt}
+\item\textbf{IoT Weather station - Wifi provisioning - ESP8266 :}
+Built a wifi-connected weather station and made firmware allowing Wi-Fi provisionnin for an easy setup.
+\vspace{-5pt}
+\item\textbf{CAN protocol and embedded C:}
+Built and programmed a CAN communication system between Easypic7 and Armadeus embedded boards allowing the transfer/reception of commands and data from ultrasonic sensors.
+\vspace{-5pt}
+\item\textbf{ADAS simulations:}
+Made a simulation of ABS and ESP systems on Matlab Simulink.
+\vspace{-5pt}
+\item\textbf{IoT IR gesture control:}
+Built an IR based gesture recognition device. Integrated it in different systems/uses.
+
+\end{itemize}
+
+\resheading{Interests}
+\begin{itemize}
+\item { Artificial Intelligence {\small\textbullet} Maker/DIY {\small\textbullet}  Societé Française d'Acoustique {\small\textbullet}  Rotaract Club {\small\textbullet} Cycling {\small\textbullet}  Swimming}
+\end{itemize}
+\end{document}
