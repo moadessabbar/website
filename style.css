@@ -16,7 +16,8 @@ h1, h2, h3, h4 {
 	background-color: #FFF;
 	border-radius: 5px;
 	margin: 2%;
-	padding: 3%;
+	padding: 2%;
+	padding-left: 3%;
 }
 
 .thumbnail {
