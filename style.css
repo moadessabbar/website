@@ -1,14 +1,22 @@
 body {
-	margin-left: 100px;
-	margin-right: 150px;
+	margin-left: 10%;
+	margin-right: 10%;
+	background: #E5E8EA;
 }
 
 h1, h2, h3, h4{
 	font-weight: 300;
 }
 
-div {
+.header {
+	padding-left: 3%;
+}
+
+.post {
+	background: #FFF;
+	border-radius: 5px;
 	margin: 2%;
+	padding: 3%;
 }
 
 .thumbnail {
