@@ -22,7 +22,7 @@ h1, h2, h3, h4 {
 .thumbnail {
   border-radius: 8px;
   display: inline-block;
-  max-height: 200px;
+  max-height: 100px;
   width: auto;
 }
 
