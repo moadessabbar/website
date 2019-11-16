@@ -1,10 +1,5 @@
 
 @media only screen and (max-width: 800px) {
-	
-	body {
-		margin-left: unset;
-		margin-right: unset;
-	}
 
 	.header {
 		text-align: center;
@@ -13,14 +8,20 @@
 	}
 }
 
+@media only screen and (min-width:801px) {
+
+	body {
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+}
+
 body {
-	margin-left: 10%;
-	margin-right: 10%;
 	background-color: #E5E8EA;
 	font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
 	font-weight: 300;
 }
 
