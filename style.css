@@ -1,19 +1,21 @@
 
-@media only screen and (max-width: 800px) {
-
-	.header {
-		text-align: center;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-}
-
-@media only screen and (min-width:801px) {
+@media only screen and (min-width:800px) {
 
 	body {
 		margin-right: 10%;
 		margin-left: 10%;
 	}
+	
+	input[name=filter] + label:hover {
+	background: #9FD5C7;
+	color: #FFF;
+	}
+}
+
+.header {
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 body {
@@ -62,11 +64,6 @@ input[name=filter] + label {
 
 input[name=filter]:checked + label {
     background: #59C2A3;
-	color: #FFF;
-}
-
-input[name=filter] + label:hover {
-	background: #9FD5C7;
 	color: #FFF;
 }
 
