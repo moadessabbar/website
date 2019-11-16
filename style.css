@@ -1,6 +1,6 @@
 body {
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
 	background-color: #E5E8EA;
 }
 
@@ -8,16 +8,45 @@ h1, h2, h3, h4 {
 	font-weight: 300;
 }
 
-.header {
-	padding-left: 3%;
-}
-
 .post {
 	background-color: #FFF;
 	border-radius: 5px;
-	margin: 2%;
+	margin-bottom: 2%;
+	margin-top: 2%;
 	padding: 2%;
 	padding-left: 3%;
+}
+
+input[name=filter] {
+	opacity: 0;
+	position: fixed;
+	width: 0;
+}
+
+input[name=filter] + label {
+	font-weight: 300;
+	font-family: Arial;
+    padding: 0.5rem 1rem;
+	border-radius: 2rem;
+	min-width: 50px;
+	transition: all 0.1s;
+}
+
+input[name=filter]:checked + label {
+    background: rgb(89,194,163);
+	color: #FFF;
+}
+
+input[name=filter] + label:hover {
+	background: rgba(89,194,163, 0.5);
+	color: #FFF;
+}
+
+input[id=All]:checked ~ .post:not([class~="post"]),
+input[id=Bio]:checked ~ .post:not([class~="Bio"]),
+input[id=CAD]:checked ~ .post:not([class~="CAD"]),
+input[id=Programming]:checked ~ .post:not([class~="Programming"]){
+  display: none;
 }
 
 .thumbnail {
