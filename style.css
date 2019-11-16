@@ -11,10 +11,11 @@
 	}
 }
 
-.header {
-	text-align: center;
-	margin-left: 5%;
-	margin-right: 5%;
+@media only screen and (max-width:500px) {
+	
+	.header h4{
+		display: none;
+	}
 }
 
 body {
@@ -24,6 +25,12 @@ body {
 
 h1, h2, h3, h4, p {
 	font-weight: 300;
+}
+
+.header {
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .post {
@@ -52,9 +59,9 @@ input[name=filter] {
 input[name=filter] + label {
 	font-weight: 300;
 	color: grey;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
 	border-radius: 2rem;
-	min-width: 50px;
+	min-width: 20px;
 	transition: all 0.1s;
 	margin-bottom: 10px;
 	text-align: center;
@@ -67,9 +74,9 @@ input[name=filter]:checked + label {
 }
 
 input[id=All]:checked ~ .post:not([class~="post"]),
-input[id=Bio]:checked ~ .post:not([class~="Bio"]),
+input[id=Docs]:checked ~ .post:not([class~="Docs"]),
 input[id=CAD]:checked ~ .post:not([class~="CAD"]),
-input[id=Programming]:checked ~ .post:not([class~="Programming"]){
+input[id=IT]:checked ~ .post:not([class~="IT"]){
   display: none;
 }
 
