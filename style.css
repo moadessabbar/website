@@ -1,3 +1,19 @@
+
+@media only screen and (max-width: 600px) {
+	
+	body {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+
+	.header {
+		text-align: center;
+	}
+	
+	input[name=filter] + label:hover {}
+	
+}
+
 body {
 	margin-left: 10%;
 	margin-right: 10%;
@@ -11,15 +27,23 @@ h1, h2, h3, h4 {
 .post {
 	background-color: #FFF;
 	border-radius: 5px;
-	margin-bottom: 2%;
-	margin-top: 2%;
-	padding: 2%;
-	padding-left: 3%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 20px;
+	padding-left: 20px;
+}
+
+.post h2 {
+	display: inline;
+}
+
+.post h4 {
+	display: inline;
+	color: grey;
 }
 
 input[name=filter] {
 	opacity: 0;
-	position: fixed;
 	width: 0;
 }
 
@@ -30,15 +54,18 @@ input[name=filter] + label {
 	border-radius: 2rem;
 	min-width: 50px;
 	transition: all 0.1s;
+	margin-bottom: 10px;
+	text-align: center;
+	display: inline-block;
 }
 
 input[name=filter]:checked + label {
-    background: rgb(89,194,163);
+    background: #59C2A3;
 	color: #FFF;
 }
 
 input[name=filter] + label:hover {
-	background: rgba(89,194,163, 0.5);
+	background: #9FD5C7;
 	color: #FFF;
 }
 
@@ -84,4 +111,3 @@ input[id=Programming]:checked ~ .post:not([class~="Programming"]){
 	/** Unhide lightbox **/
 	display: block;
 }
-
