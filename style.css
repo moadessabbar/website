@@ -51,6 +51,26 @@ h1, h2, h3, h4, p {
 	color: grey;
 }
 
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+	color: #989898;
+	text-align: center;
+}
+
 input[name=filter] {
 	opacity: 0;
 	width: 0;
@@ -75,7 +95,9 @@ input[name=filter]:checked + label {
 
 input[id=All]:checked ~ .post:not([class~="post"]),
 input[id=Docs]:checked ~ .post:not([class~="Docs"]),
+input[id=Events]:checked ~ .post:not([class~="Events"]),
 input[id=CAD]:checked ~ .post:not([class~="CAD"]),
+input[id=DIY]:checked ~ .post:not([class~="DIY"]),
 input[id=IT]:checked ~ .post:not([class~="IT"]){
   display: none;
 }
