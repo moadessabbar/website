@@ -5,13 +5,9 @@
 		margin-left: 10%;
 	}
 	
-	input[name=filter] + label:hover {
-		/*background: #9FD5C7;
-		color: #FFF;*/
-		
+	input[name=filter]:not([id="Home"]) + label:hover {
 		border-bottom-style: solid;
-		border-bottom-color: grey;
-		color: grey;
+		border-bottom-color: #BBB;
 	}
 }
 
@@ -22,6 +18,8 @@ body {
 
 p {
 	font-weight: 300;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 h6, h3 {
@@ -29,19 +27,9 @@ h6, h3 {
 	display: inline;
 }
 
-.header {
-	display: inline-table;
-	padding: 0.7rem 0.6rem;
-	vertical-align: middle;
-	background-color: black;
-	color: white;
-	text-align: center;
-	border-radius: 5px;
-}
-
-.header h3 {
-	display: table-cell;
-    vertical-align: middle;
+a {
+	text-decoration: none;
+	color: blue;
 }
 
 .post {
@@ -60,6 +48,47 @@ h6, h3 {
 .post h6 {
 	display: inline;
 	color: grey;
+}
+
+input[name=filter] {
+	opacity: 0;
+	width: 0;
+}
+
+input[id=Home] + label {
+	font-weight: 500;
+	font-size: 1.1em;
+	padding: 0.6rem 0.5rem;
+	background-color: black;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	display: inline-block;
+	margin-left: -11.5px;
+}
+
+input[name=filter]:not([id="Home"]) + label {
+	font-weight: 400;
+	color: black;
+    padding: 0.5rem 0.2rem;
+	text-align: center;
+	display: inline-block;
+}
+
+input[name=filter]:not([id="Home"]):checked + label {
+	border-bottom-style: solid;
+}
+
+input[id=Home]:checked ~ .post {
+	display:;
+}
+
+input[id=Templates]:checked ~ .post:not([class~="Templates"]),
+input[id=Events]:checked ~ .post:not([class~="Events"]),
+input[id=CAD]:checked ~ .post:not([class~="CAD"]),
+input[id=DIY]:checked ~ .post:not([class~="DIY"]),
+input[id=IT]:checked ~ .post:not([class~="IT"]){
+  display: none;
 }
 
 .video-wrapper {
@@ -85,39 +114,8 @@ h6, h3 {
 .footer {
 	color: #AAA;
 	text-align: center;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: 300;
-}
-
-input[name=filter] {
-	opacity: 0;
-	width: 0;
-}
-
-input[name=filter] + label {
-	font-weight: 400;
-	color: black;
-    padding: 0.5rem 0.5rem;
-	/*border-radius: 2rem;*/
-	min-width: 20px;
-	transition: all 0.1s;
-	text-align: center;
-	display: inline-block;
-}
-
-input[name=filter]:checked + label {
-    /*background: #59C2A3;
-	color: #FFF;*/
-	border-bottom-style: solid;
-}
-
-input[id=All]:checked ~ .post:not([class~="post"]),
-input[id=Templates]:checked ~ .post:not([class~="Templates"]),
-input[id=Events]:checked ~ .post:not([class~="Events"]),
-input[id=CAD]:checked ~ .post:not([class~="CAD"]),
-input[id=DIY]:checked ~ .post:not([class~="DIY"]),
-input[id=IT]:checked ~ .post:not([class~="IT"]){
-  display: none;
 }
 
 .thumbnail {
@@ -128,7 +126,7 @@ input[id=IT]:checked ~ .post:not([class~="IT"]){
 }
 
 .lightbox {
-	/** Default lightbox to hidden */
+	/** Default lightbox to hide */
 	display: none;
 
 	/** Position and style */
@@ -162,7 +160,7 @@ input[id=IT]:checked ~ .post:not([class~="IT"]){
    ========================================================================== */
 
 /**
- * 1. Correct the line height in all browsers.
+ * 1. Correct the line height in Home browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
@@ -175,7 +173,7 @@ html {
    ========================================================================== */
 
 /**
- * Remove the margin in all browsers.
+ * Remove the margin in Home browsers.
  */
 
 body {
@@ -215,8 +213,8 @@ hr {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
+ * 1. Correct the inheritance and scaling of font size in Home browsers.
+ * 2. Correct the odd `em` font sizing in Home browsers.
  */
 
 pre {
@@ -256,8 +254,8 @@ strong {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
+ * 1. Correct the inheritance and scaling of font size in Home browsers.
+ * 2. Correct the odd `em` font sizing in Home browsers.
  */
 
 code,
@@ -268,16 +266,16 @@ samp {
 }
 
 /**
- * Add the correct font size in all browsers.
+ * Add the correct font size in Home browsers.
  */
 
-small {
+smHome {
   font-size: 80%;
 }
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
+ * Home browsers.
  */
 
 sub,
@@ -311,7 +309,7 @@ img {
    ========================================================================== */
 
 /**
- * 1. Change the font styles in all browsers.
+ * 1. Change the font styles in Home browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
 
@@ -392,7 +390,7 @@ fieldset {
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
+ *    `fieldset` elements in Home browsers.
  */
 
 legend {
@@ -480,7 +478,7 @@ details {
 }
 
 /*
- * Add the correct display in all browsers.
+ * Add the correct display in Home browsers.
  */
 
 summary {
