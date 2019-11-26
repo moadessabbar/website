@@ -65,6 +65,7 @@ input[id=Home] + label {
 	border-radius: 5px;
 	display: inline-block;
 	margin-left: -11.5px;
+	min-width: 2rem;
 }
 
 input[name=filter]:not([id="Home"]) + label {
@@ -81,6 +82,15 @@ input[name=filter]:not([id="Home"]):checked + label {
 
 input[id=Home]:checked ~ .post {
 	display:;
+}
+
+input[id=Home]:not(:checked) + label {
+	font-size:0;
+}
+
+input[id=Home]:not(:checked) + label:before {
+	font-size: 1.1rem;
+	content: "<";
 }
 
 input[id=Templates]:checked ~ .post:not([class~="Templates"]),
