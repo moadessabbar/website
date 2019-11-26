@@ -4,49 +4,45 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="images/favicon.ico" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet"> 
     <title>Moad Essabbar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_beta.css">
   </head>
   
   <body>
-	<div class="header">
-		<h1>Moad Essabbar</h1>
-		<h4>“Debugging is like being the detective in a crime drama where you are also the murderer.”</h4>
-	</div>
 	
 	<input type="radio" name="filter" id="All">
 	<label for="All">All</label>
-	<input type="radio" name="filter" id="Docs">
-	<label for="Docs">Docs</label>
-	<input type="radio" name="filter" id="Events" checked>
+	<input type="radio" name="filter" id="Templates">
+	<label for="Templates">Templates</label>
+	<input type="radio" name="filter" id="Events">
 	<label for="Events">Events</label>
 	<input type="radio" name="filter" id="CAD">
 	<label for="CAD">3D</label>
 	<input type="radio" name="filter" id="DIY">
 	<label for="DIY">DIY</label>
-	<input type="radio" name="filter" id="IT">
+	<input type="radio" name="filter" id="IT" checked>
 	<label for="IT">IT</label>
 	
-	<div class="post Docs">
-		<h2>&bull; Résumé Word - Two column</h2>
-		<h4>&emsp;11.2019</h4>
-		<p>Microsoft Word based résumé. Two columns. With picture (easily removable).</p>
+	<div class="post Templates">
+		<h3>Résumé Word Template - Two column</h3>
+		<h6>&emsp;11.2019</h6>
+		<p>Microsoft Word based résumé. Two columns. With picture (easily removable without altering the design).</p>
 		<p>Software: <a href="https://products.office.com/en/word" target="_blank">Microsoft Word 2019</a></p>
 		<p>Download: <a href="files/resume_en_v2.docx" target="_blank">resume.docx</a> <a href="files/resume_en_v2.pdf" target="_blank">resume.pdf</a></p>
 	</div>
 	
-	<div class="post Docs">
-		<h2>&bull; Résumé LaTeX - One column</h2>
-		<h4>&emsp;11.2019</h4>
-		<p>LaTeX based résumé. One column. With picture (easily removable).</p>
+	<div class="post Templates">
+		<h3>Résumé LaTeX Template - One column</h3>
+		<h6>&emsp;11.2019</h6>
+		<p>LaTeX based résumé. One column. With picture (easily removable without altering the design).</p>
 		<p>Software: <a href="https://www.latex-project.org/get/" target="_blank">LaTeX</a></p>
 		<p>Download: <a href="files/resume_en.tex" target="_blank">resume.tex</a> <a href="files/resume_en.pdf" target="_blank">resume.pdf</a></p>
 	</div>
 		
 	<div class="post CAD">	
-		<h2>&bull; Nacelle desktoy</h2>
-		<h4>&emsp;10.2019</h4>
+		<h3>Nacelle desktoy</h3>
+		<h6>&emsp;10.2019</h6>
 		<p>Pivoting-door thrust reverser. 3D printable but poorly optimized. Tested on Creality CR-10. Supports are needed, a brim if necessary.</p>
 		<p>Software: <a href="https://www.autodesk.com/products/fusion-360/overview#banner" target="_blank">Autodesk Fusion 360</a></p>
 		<p>Download: <a href="files/nacelle.stl" target="_blank">nacelle.stl</a></p>
@@ -61,8 +57,8 @@
 	</div>	
 	
 	<div class="post CAD" data-category="post">
-		<h2>&bull; Hinged egg</h2>
-		<h4>&emsp;10.2019</h4>
+		<h3>Hinged egg</h3>
+		<h6>&emsp;10.2019</h6>
 		<p>3D printable. Tested on Creality CR-10 and CR-X. Can be opened up to 90°. No supports needed, a brim if necessary.</p>
 		<p>Software: <a href="https://www.autodesk.com/products/fusion-360/overview#banner" target="_blank">Autodesk Fusion 360</a></p>
 		<p>Download: <a href="files/hinged_egg.stl" target="_blank">hinged_egg.stl</a></p>
@@ -73,8 +69,8 @@
 	</div>
 	
 	<div class="post IT" data-category="post">
-		<h2>&bull; Sperm AI</h2>
-		<h4>&emsp;07.2019</h4>
+		<h3>Sperm AI</h3>
+		<h6>&emsp;07.2019</h6>
 		<p>Genetic algorithm. Initial population (spermatozoïds), evolving to converge to the solution (egg), while avoiding obstacles (borders and blue rectangle).</p>
 		<p>Software: <a href="https://processing.org/" target="_blank">Processing</a></p>
 		<p>Download cource code: <a href="files/SpermAI.zip" target="_blank">Source code</a></p>
@@ -88,8 +84,8 @@
 	</div>
 	
 	<div class="post CAD">	
-		<h2>&bull; Fez Bab Boujloud desktoy</h2>
-		<h4>&emsp;10.2018</h4>
+		<h3>Fez Bab Boujloud desktoy</h3>
+		<h6>&emsp;10.2018</h6>
 		<p>The gate is inspired from the historical "Bad Bou Jloud" in Fes, the scientific capital of Morocco. The base is literally "Fes" in arabic letters.
 		The letters slide into the gate. The adjustment is a little tight. Tested on Creality CR-10.</p>
 		<p>Software: <a href="https://www.autodesk.com/products/fusion-360/overview#banner" target="_blank">Autodesk Fusion 360</a></p>
@@ -103,16 +99,16 @@
 	</div>
 	
 	<div class="post DIY IT">	
-		<h2>&bull; Smart Mirror</h2>
-		<h4>&emsp;03.2018</h4>
+		<h3>Smart Mirror</h3>
+		<h6>&emsp;03.2018</h6>
 		<p>DIY Smart Mirror.</p>
 		<a href="#mirror"><img src="images/mirror.png" class="thumbnail"></a>
 		<a href="#_" class="lightbox" id="mirror"><img src="images/mirror.png"></a>
 	</div>
 	
 	<div class="post DIY CAD">	
-		<h2>&bull; 3D printer - Creality CR-10</h2>
-		<h4>&emsp;02.2018</h4>
+		<h3>3D printer - Creality CR-10</h3>
+		<h6>&emsp;02.2018</h6>
 		<p>The long-awaited 3D Printer is finally here! Creality CR-10. Barebones 3D printer but a very good value for the price (valid at the time of the post).</p>
 		<p>Hardware: <a href="https://www.creality3dshop.eu/collections/cr-series-3d-printer/products/creality-cr-10-3d-printer-prusa-i3-diy-kit-aluminum-large-print-size-300x300x400mm" target="_blank">Creality CR-10</a></p>
 		<a href="#printer1"><img src="images/printer1.jpg" class="thumbnail"></a>
@@ -126,40 +122,46 @@
 	</div>
 	
 	<div class="post DIY 3D">	
-		<h2>&bull; Fast One-handed unbulcky wallet design</h2>
-		<h4>&emsp;03.2018</h4>
+		<h3>Fast One-handed unbulcky wallet design</h3>
+		<h6>&emsp;03.2018</h6>
 		<p>3D printed prototype of a really fast one-handed wallet/card holder. All while keeping an unbulky minimalist design. Ideal for situations where one of both hands is already busy( e.g. carrying bags, holding phone,...)</p>
 		<p>Software: <a href="https://www.arduino.cc/" target="_blank">Arduino</a></p>
-		<div class="video-container">
-		<iframe class="video" src="https://www.youtube.com/embed/-GLoZAVUv2M?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="video-wrapper">
+		<div class="video-player">
+		<iframe class="YTvideo" src="https://www.youtube.com/embed/-GLoZAVUv2M?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		</div>
 	</div>
 	
 	<div class="post DIY IT">	
-		<h2>&bull; Wifi Provisioning - Weather Station</h2>
-		<h4>&emsp;08.2017</h4>
+		<h3>Wifi Provisioning - Weather Station</h3>
+		<h6>&emsp;08.2017</h6>
 		<p>ESP8266 Wifi-connected weather station with firmware allowing Wi-Fi provisiongn for an easy setup. It displays time, weather and adhan times.</p>
 		<p>Software: <a href="https://www.arduino.cc/" target="_blank">Arduino</a></p>
 		<p>Hardware: <a href="https://www.adafruit.com/product/2821" target="_blank">Feather Huzzah with ESP8266</a> <a href="https://www.adafruit.com/product/3134" target="_blank"> 15x7 CharliePlex LED Matrix Display FeatherWing</a></p>
 		<p>Download source code: <a href="files/time_weather_adhan.ino" target="_blank">Source code</a></p>
-		<div class="video-container">
-		<iframe class="video" src="https://www.youtube.com/embed/pytr6EDoxAI?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="video-wrapper">
+		<div class="video-player">
+		<iframe class="YTvideo" src="https://www.youtube.com/embed/pytr6EDoxAI?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		</div>
 	</div>
 	
 	<div class="post IT">	
-		<h2>&bull; Gesture control</h2>
-		<h4>&emsp;02.2017</h4>
+		<h3>Gesture control</h3>
+		<h6>&emsp;02.2017</h6>
 		<p>IR based gesture recognition. Wifi-connected. Integrated as a wireless media controller. Video better with sound.</p>
 		<p>Software: <a href="https://www.arduino.cc/" target="_blank">Arduino</a></p>
-		<div class="video-container">
-		<iframe class="video" src="https://www.youtube.com/embed/EGLL_TvYtj4?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="video-wrapper">
+		<div class="video-player">
+		<iframe class="YTvideo" src="https://www.youtube.com/embed/EGLL_TvYtj4?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		</div>
 	</div>
 	
 	<div class="post Events">	
-		<h2>&bull; Bsabiss/Aït Arfa Elementary Schools renovation</h2>
-		<h4>&emsp;11.2016</h4>
+		<h3>Bsabiss/Aït Arfa Elementary Schools renovation</h3>
+		<h6>&emsp;11.2016</h6>
 		<p>Rotaract Club ENSA #Service_Above_Self</br>
 		Special thanks to Aït Arfa locals for their warm welcome.</p>
 		<p>Club website: <a href="https://www.rotary.org/en/get-involved/rotaract-clubs?gclid=Cj0KCQiAn8nuBRCzARIsAJcdIfOLDqCzZlYASJnVE8rsb4gZpM_kuur6jbyZxWwqQ8kAEdUEHRRJhewaAo4MEALw_wcB" target="_blank">Rotaract</a></p>
@@ -178,20 +180,20 @@
 	</div>
 	
 	<div class="post Events">	
-		<h2>&bull; 1st Place at ProtoTop competition</h2>
-		<h4>&emsp;05.2016</h4>
+		<h3>1st Place at ProtoTop competition</h3>
+		<h6>&emsp;05.2016</h6>
 		<p>Did it again! Motion Contol for the win! Fast Prototyping champions of the USMBA! </br>
-		Special mention to <b>Abdelhadi Boussaid</b>, partnership at its best!</p>
+		Special mention to Abdelhadi Boussaid, partnership at its best!</p>
 		<p>Event: <a href="http://www.usmba.ac.ma/~usmba2/blog/appel-a-competition-de-prototypage-prototop/" target="_blank">ProtoTop competition</a></p>
 		<a href="#prototop1"><img src="images/prototop1.jpg" class="thumbnail"></a>
 		<a href="#_" class="lightbox" id="prototop1"><img src="images/prototop1.jpg"></a>
 	</div>
 	
 	<div class="post Events">	
-		<h2>&bull; 1st Place at Google Startup Weekend Competition</h2>
-		<h4>&emsp;02.2016</h4>
+		<h3>1st Place at Google Startup Weekend Competition</h3>
+		<h6>&emsp;02.2016</h6>
 		<p>Motion Contol for the win! See you in Istanbul ;) </br>
-		Special mention to <b>Abdelhadi Boussaid</b>, partnership at its best!</p>
+		Special mention to Abdelhadi Boussaid, partnership at its best!</p>
 		<p>Event: <a href="https://startupweekend.org/" target="_blank">Startup Weekend</a></p>
 		<p>Article (in french): <a href="https://www.therollingnotes.com/2016/02/12/startup-weekend-marrakech/" target="_blank">They are talking about us.</a></p>
 		<a href="#SW1"><img src="images/SW1.png" class="thumbnail"></a>
@@ -203,8 +205,8 @@
 	</div>
 	
 	<div class="post 3D">	
-		<h2>&bull; Drone designs</h2>
-		<h4>&emsp;11.2015</h4>
+		<h3>Drone designs</h3>
+		<h6>&emsp;11.2015</h6>
 		<p>3D hexacopter frames.</p>
 		<p>Software: <a href="https://www.3ds.com/products-services/catia/" target="_blank">CATIA V5</a></p>
 		<a href="#drone1"><img src="images/drone1.png" class="thumbnail"></a>

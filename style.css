@@ -11,26 +11,18 @@
 	}
 }
 
-@media only screen and (max-width:500px) {
-	
-	.header h4{
-		display: none;
-	}
-}
-
 body {
 	background-color: #E5E8EA;
 	font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, p {
+p, h1 {
 	font-weight: 300;
 }
 
-.header {
-	text-align: center;
-	margin-left: 5%;
-	margin-right: 5%;
+h6, h3 {
+	font-weight: 400;
+	display: inline;
 }
 
 .post {
@@ -42,33 +34,40 @@ h1, h2, h3, h4, p {
 	padding-left: 20px;
 }
 
-.post h2 {
+.post h3 {
 	display: inline;
 }
 
-.post h4 {
+.post h6 {
 	display: inline;
 	color: grey;
 }
 
-.video-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
+.video-wrapper {
+	max-width: 480px;
 }
 
-.video {
+.video-player {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+}
+
+.YTvideo {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
 }
 
 .footer {
-	color: #989898;
+	color: #AAA;
 	text-align: center;
+	font-size: 12px;
+	font-weight: 300;
 }
 
 input[name=filter] {
@@ -76,14 +75,13 @@ input[name=filter] {
 	width: 0;
 }
 
-input[name=filter] + label {
+.author, input[name=filter] + label {
 	font-weight: 300;
 	color: grey;
     padding: 0.5rem 0.5rem;
 	border-radius: 2rem;
 	min-width: 20px;
 	transition: all 0.1s;
-	margin-bottom: 10px;
 	text-align: center;
 	display: inline-block;
 }
@@ -94,7 +92,7 @@ input[name=filter]:checked + label {
 }
 
 input[id=All]:checked ~ .post:not([class~="post"]),
-input[id=Docs]:checked ~ .post:not([class~="Docs"]),
+input[id=Templates]:checked ~ .post:not([class~="Templates"]),
 input[id=Events]:checked ~ .post:not([class~="Events"]),
 input[id=CAD]:checked ~ .post:not([class~="CAD"]),
 input[id=DIY]:checked ~ .post:not([class~="DIY"]),
