@@ -75,7 +75,7 @@ input[name=filter] {
 	width: 0;
 }
 
-.author, input[name=filter] + label {
+input[name=filter] + label {
 	font-weight: 300;
 	color: grey;
     padding: 0.5rem 0.5rem;
