@@ -170,7 +170,7 @@ input[id=IT]:checked ~ .post:not([class~="IT"]){
    ========================================================================== */
 
 /**
- * 1. Correct the line height in Home browsers.
+ * 1. Correct the line height in All browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
@@ -183,7 +183,7 @@ html {
    ========================================================================== */
 
 /**
- * Remove the margin in Home browsers.
+ * Remove the margin in All browsers.
  */
 
 body {
@@ -223,8 +223,8 @@ hr {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in Home browsers.
- * 2. Correct the odd `em` font sizing in Home browsers.
+ * 1. Correct the inheritance and scaling of font size in All browsers.
+ * 2. Correct the odd `em` font sizing in All browsers.
  */
 
 pre {
@@ -264,8 +264,8 @@ strong {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in Home browsers.
- * 2. Correct the odd `em` font sizing in Home browsers.
+ * 1. Correct the inheritance and scaling of font size in All browsers.
+ * 2. Correct the odd `em` font sizing in All browsers.
  */
 
 code,
@@ -276,16 +276,16 @@ samp {
 }
 
 /**
- * Add the correct font size in Home browsers.
+ * Add the correct font size in All browsers.
  */
 
-smHome {
+small {
   font-size: 80%;
 }
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
- * Home browsers.
+ * all browsers.
  */
 
 sub,
@@ -319,7 +319,7 @@ img {
    ========================================================================== */
 
 /**
- * 1. Change the font styles in Home browsers.
+ * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
 
@@ -400,7 +400,7 @@ fieldset {
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in Home browsers.
+ *    `fieldset` elements in All browsers.
  */
 
 legend {
@@ -488,7 +488,7 @@ details {
 }
 
 /*
- * Add the correct display in Home browsers.
+ * Add the correct display in All browsers.
  */
 
 summary {
