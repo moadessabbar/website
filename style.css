@@ -20,6 +20,8 @@ p {
 	font-weight: 300;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 h6, h3 {
