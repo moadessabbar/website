@@ -1,12 +1,13 @@
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:700px) {
 
 	body {
-		margin-right: 10%;
-		margin-left: 10%;
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto
 	}
 	
 	input[name=filter]:not([id="Home"]) + label:hover {
-		color: #03DAC6;
+		color: #FFF;
 	}
 }
 
@@ -16,8 +17,9 @@ body {
 	padding-right: 25px;
 	padding-left: 25px;
 	background-color: #121212;
-	font-family: Consolas, monaco, monospace; 
+	font-family: 'Roboto'; 
 	color: #FFF;
+	text-align: center;
 }
 
 
@@ -25,19 +27,36 @@ h1 { font-size: 23px; font-style: normal; font-variant: normal; font-weight: 700
 
 h3 { font-size: 17px; font-style: normal; font-variant: normal; font-weight: 600; line-height: 23px;}
 
-h6 { font-size: 12px; font-style: normal; font-variant: normal; font-weight: 600;}
+h6 { font-size: 12px; font-style: normal; font-variant: normal; font-weight: 600; text-align: right; }
 
-h6:before { color: #03DAC6;  content: "| "; }
+h6:before { color: #03DAC6;  content: "# "; }
 
 p { font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; text-align: justify; text-justify: inter-word; }
 
-a {
+.post a {
 	text-decoration: underline;
 	color: inherit;
 }
 
+
 .post {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	padding: 20px;
+	padding-top: 150px;
+	-webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+	
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0% 0%;
+	
+	text-align: left;
+}
+
+#CV + label a{
+	text-decoration: none;
+	color: inherit;
 }
 
 input[name=filter] {
@@ -58,17 +77,17 @@ input[id=Home] + label {
 
 input[name=filter]:not([id="Home"]) + label {
 	display: inline-block;
+	font-weight: 400;
 }
 
 input[name=filter]:checked + label {
-	color: #03DAC6;
+	color: #FFF;
 }
 
 input[id=Home]:checked ~ .post {
 	display:;
 }
 
-input[id=Templates]:checked ~ .post:not([class~="Templates"]),
 input[id=Events]:checked ~ .post:not([class~="Events"]),
 input[id=CAD]:checked ~ .post:not([class~="CAD"]),
 input[id=DIY]:checked ~ .post:not([class~="DIY"]),
@@ -78,6 +97,5 @@ input[id=IT]:checked ~ .post:not([class~="IT"]){
 
 .footer {
 	color: #444;
-	text-align: center;
 	font-size: 12px; font-style: normal; font-variant: normal; font-weight: 600; line-height: 15px;
 }
