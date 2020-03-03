@@ -8,6 +8,8 @@
 	
 	input[name=filter]:not([id="Home"]) + label:hover {
 		color: #FFF;
+		border-bottom-color: beige;
+		opacity: .5
 	}
 }
 
@@ -20,10 +22,13 @@ body {
 	font-family: 'Roboto'; 
 	color: #FFF;
 	text-align: center;
+	
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(22,22,22,1) 300px),
+	url('./bg/pattern.png');
 }
 
 
-h1 { font-size: 23px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; }
+h1 { font-size: 30px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px;}
 
 h3 { font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; opacity: 0.87;}
 
@@ -58,8 +63,8 @@ p { font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400;
 }
 
 #CV + label a{
-	text-decoration: none;
 	color: inherit;
+	text-decoration: none;
 }
 
 input[name=filter] {
@@ -75,16 +80,21 @@ input[name=filter] + label {
 
 input[id=Home] + label {
 	display: block;
-	font-family: 'Pacifico';
 	margin-top: 40px;
+	font-family: 'Cairo';
 }
 
 input[name=filter]:not([id="Home"]) + label {
 	display: inline-block;
+	border-bottom: 2px solid #444;
+}
+
+input[name=filter]:not([id="Home"]):checked + label {
+	border-bottom-color: beige;
 }
 
 input[name=filter]:checked + label {
-	color: #FFF;
+	color: beige;
 }
 
 input[id=Home]:checked ~ .post {
