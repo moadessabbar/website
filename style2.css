@@ -23,11 +23,11 @@ body {
 }
 
 
-h1 { font-size: 23px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; }
+h1 { font-size: 23px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; }
 
-h3 { font-size: 17px; font-style: normal; font-variant: normal; font-weight: 600; line-height: 23px; opacity: 0.87;}
+h3 { font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; opacity: 0.87;}
 
-h6 { font-size: 12px; font-style: normal; font-variant: normal; font-weight: 600; text-align: right; }
+h6 { font-size: 12px; font-style: normal; font-variant: normal; font-weight: 700; text-align: right; }
 
 h6:before { color: #03DAC6;  content: "# "; }
 
@@ -68,7 +68,6 @@ input[name=filter] {
 
 input[name=filter] + label {
 	color: #444;
-	font-size: 15px; font-style: normal; font-variant: normal; font-weight: 600; line-height: 23px;
 	margin-bottom: 20px;
 	margin-right: 20px;
 	cursor: pointer;
@@ -76,11 +75,12 @@ input[name=filter] + label {
 
 input[id=Home] + label {
 	display: block;
+	font-family: 'Pacifico';
+	margin-top: 40px;
 }
 
 input[name=filter]:not([id="Home"]) + label {
 	display: inline-block;
-	font-weight: 400;
 }
 
 input[name=filter]:checked + label {
@@ -100,5 +100,5 @@ input[id=IT]:checked ~ .post:not([class~="IT"]){
 
 .footer {
 	color: #444;
-	font-size: 12px; font-style: normal; font-variant: normal; font-weight: 600; line-height: 15px;
+	font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400;line-height: 15px;
 }
