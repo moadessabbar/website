@@ -16,8 +16,8 @@
 html {overflow-y: scroll;}
 
 body {
-	padding-right: 25px;
-	padding-left: 25px;
+	padding-right: 5px;
+	padding-left: 5px;
 	background-color: #121212;
 	font-family: 'Roboto'; 
 	color: #FFF;
