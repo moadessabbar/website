@@ -44,7 +44,7 @@ h6 { font-size: 12px; font-weight: 700; text-align: right; }
 
 h6:before { color: #03DAC6;  content: "# "; }
 
-p, summary { font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; text-align: justify; text-justify: inter-word; opacity: 0.6; }
+p, summary { font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; text-align: justify; text-justify: inter-word; opacity: 0.6; }
 
 summary {
 	color: #fff7b3;
